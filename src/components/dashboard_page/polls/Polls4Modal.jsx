@@ -1,18 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PieChart } from 'react-minimal-pie-chart';
+import { useCollectionData, useCollection, useDocumentData, useDocument, useCollectionDataOnce } from 'react-firebase-hooks/firestore';
+import { firestore } from '../../firebaseContext';
 
-export default function Polls4Modal({ showModal, setShowModal }) {
+export default function Polls4Modal(props) {
+  const [tempData, setTempData] = useState([
+    { title: 'A', value: 0, color: '#1368ce' },
+    { title: 'B', value: 0, color: '#e21b3c' },
+    { title: 'C', value: 0, color: '#ffa602' },
+    { title: 'D', value: 0, color: '#26890c' },
+  ]
+  );
+  const [pollsData] = useCollectionData(firestore.collection('sessions').doc(props.sessionID).collection('teacherQuestions').doc(props.id).collection('answers'));
 
   const [selected, setSelected] = useState(-1);
   const [hovered, setHovered] = useState(undefined);
 
-  const tempData = [
-    { title: 'A', value: 10, color: '#1368ce' },
-    { title: 'B', value: 15, color: '#e21b3c' },
-    { title: 'C', value: 32, color: '#ffa602' },
-    { title: 'D', value: 52, color: '#26890c' },
+  useEffect(()=>{
+    if (pollsData) {
+      console.log(pollsData[0].count)
+      setTempData(
+        [
+          { title: 'A', value: pollsData[0].count, color: '#1368ce' },
+          { title: 'B', value: pollsData[1].count, color: '#e21b3c' },
+          { title: 'C', value: pollsData[2].count, color: '#ffa602' },
+          { title: 'D', value: pollsData[3].count, color: '#26890c' },
+        ]
+      )
+    }
+  },[pollsData]);
 
-  ];
   const data = tempData.map((entry, i) => {
     if (hovered === i) {
       return {
@@ -27,7 +44,7 @@ export default function Polls4Modal({ showModal, setShowModal }) {
 
   return (
     <>
-      {showModal ? (
+      {props.showModal ? (
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
@@ -38,12 +55,12 @@ export default function Polls4Modal({ showModal, setShowModal }) {
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
                   <h3 className="text-3xl font-semibold">
-                    Poll #3
+                    Poll #{props.index + 1}
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => {
-                      setShowModal(false);
+                      props.setShowModal(false);
                     }}
                   >
                     <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
@@ -57,7 +74,7 @@ export default function Polls4Modal({ showModal, setShowModal }) {
                     <div className="flex flex-row items-center justify-evenly">
                       <div className="7/12">
                         <div className="underline">
-                          Question: What is the world like?
+                          {props.question}
                         </div>
                         <table className="text-xl my-4">
                           <colgroup>
@@ -69,27 +86,27 @@ export default function Polls4Modal({ showModal, setShowModal }) {
                           <tbody>
                             <tr>
                               <td className="text-left">A.</td>
-                              <td className="text-left">Monsters</td>
+                              <td className="text-left">{pollsData && pollsData[0].answer}</td>
                               <td className="text-left">|</td>
-                              <td className="text-right">3</td>
+                              <td className="text-right">{pollsData && pollsData[0].count}</td>
                             </tr>
                             <tr>
                               <td className="text-left">B.</td>
-                              <td className="text-left">Yonnie</td>
+                              <td className="text-left">{pollsData && pollsData[1].answer}</td>
                               <td className="text-left">|</td>
-                              <td className="text-right">13</td>
+                              <td className="text-right">{pollsData && pollsData[1].count}</td>
                             </tr>
                             <tr>
                               <td className="text-left">C.</td>
-                              <td className="text-left">Anooj</td>
+                              <td className="text-left">{pollsData && pollsData[2].answer}</td>
                               <td className="text-left">|</td>
-                              <td className="text-right">24</td>
+                              <td className="text-right">{pollsData && pollsData[2].count}</td>
                             </tr>
                             <tr>
                               <td className="text-left">D.</td>
-                              <td className="text-left">Nathan</td>
+                              <td className="text-left">{pollsData && pollsData[3].answer}</td>
                               <td className="text-left">|</td>
-                              <td className="text-right">52</td>
+                              <td className="text-right">{pollsData && pollsData[3].count}</td>
                             </tr>
                           </tbody>
                         </table>
@@ -137,7 +154,7 @@ export default function Polls4Modal({ showModal, setShowModal }) {
                     type="button"
                     style={{ transition: "all .15s ease" }}
                     onClick={() => {
-                      setShowModal(false);
+                      props.setShowModal(false);
                     }}
                   >
                     CLOSE

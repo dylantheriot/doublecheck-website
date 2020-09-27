@@ -1,5 +1,4 @@
 import React from 'react';
-import QuestionsList from '../questions/QuestionsList';
 import PollsList from './PollsList';
 
 export default function PollsCard(props) {

@@ -35,6 +35,14 @@ export default function CreateSessionPage() {
     }, 1000);
   }
 
+  function handleSampleData() {
+    history.push({
+      pathname: '/dashboard',
+      state: {
+        'sessionID': '123321',
+      }});
+  }
+
   return (
     <div className="w-full h-full absolute top-0 left-0">
       <div className="w-screen h-screen absolute top-0 left-0">
@@ -93,9 +101,13 @@ export default function CreateSessionPage() {
               <img src={Logo} />
             </ReactFloaterJs>
           </div>
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <button class="bg-flutter-blue hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 text-5xl focus:outline-none rounded rounded-lg" onClick={handleSessionGeneration}>
               CREATE SESSION
+            </button>
+            <br />
+            <button class="bg-flutter-blue hover:bg-blue-700 text-white font-bold py-2 px-2 text-lg focus:outline-none rounded rounded-lg" onClick={handleSampleData}>
+              SEE SAMPLE DATA
             </button>
           </div>
         </div>
