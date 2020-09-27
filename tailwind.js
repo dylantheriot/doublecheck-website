@@ -21,6 +21,12 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+      
+      flutter: {
+        'blue': '#2196F3',
+        'purple': '#9C27B0',
+        'deepPurpleAccent': '#7C4DFF',
+      },
 
       gray: {
         100: '#f7fafc',

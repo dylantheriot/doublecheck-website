@@ -1145,6 +1145,24 @@ video {
   border-color: rgba(255, 255, 255, var(--divide-opacity));
 }
 
+.divide-flutter-blue > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #2196F3;
+  border-color: rgba(33, 150, 243, var(--divide-opacity));
+}
+
+.divide-flutter-purple > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #9C27B0;
+  border-color: rgba(156, 39, 176, var(--divide-opacity));
+}
+
+.divide-flutter-deepPurpleAccent > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #7C4DFF;
+  border-color: rgba(124, 77, 255, var(--divide-opacity));
+}
+
 .divide-gray-100 > :not(template) ~ :not(template) {
   --divide-opacity: 1;
   border-color: #f7fafc;
@@ -1825,6 +1843,24 @@ video {
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
+.bg-flutter-blue {
+  --bg-opacity: 1;
+  background-color: #2196F3;
+  background-color: rgba(33, 150, 243, var(--bg-opacity));
+}
+
+.bg-flutter-purple {
+  --bg-opacity: 1;
+  background-color: #9C27B0;
+  background-color: rgba(156, 39, 176, var(--bg-opacity));
+}
+
+.bg-flutter-deepPurpleAccent {
+  --bg-opacity: 1;
+  background-color: #7C4DFF;
+  background-color: rgba(124, 77, 255, var(--bg-opacity));
+}
+
 .bg-gray-100 {
   --bg-opacity: 1;
   background-color: #f7fafc;
@@ -2385,6 +2421,24 @@ video {
   background-color: rgba(255, 255, 255, var(--bg-opacity));
 }
 
+.hover\:bg-flutter-blue:hover {
+  --bg-opacity: 1;
+  background-color: #2196F3;
+  background-color: rgba(33, 150, 243, var(--bg-opacity));
+}
+
+.hover\:bg-flutter-purple:hover {
+  --bg-opacity: 1;
+  background-color: #9C27B0;
+  background-color: rgba(156, 39, 176, var(--bg-opacity));
+}
+
+.hover\:bg-flutter-deepPurpleAccent:hover {
+  --bg-opacity: 1;
+  background-color: #7C4DFF;
+  background-color: rgba(124, 77, 255, var(--bg-opacity));
+}
+
 .hover\:bg-gray-100:hover {
   --bg-opacity: 1;
   background-color: #f7fafc;
@@ -2943,6 +2997,24 @@ video {
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.focus\:bg-flutter-blue:focus {
+  --bg-opacity: 1;
+  background-color: #2196F3;
+  background-color: rgba(33, 150, 243, var(--bg-opacity));
+}
+
+.focus\:bg-flutter-purple:focus {
+  --bg-opacity: 1;
+  background-color: #9C27B0;
+  background-color: rgba(156, 39, 176, var(--bg-opacity));
+}
+
+.focus\:bg-flutter-deepPurpleAccent:focus {
+  --bg-opacity: 1;
+  background-color: #7C4DFF;
+  background-color: rgba(124, 77, 255, var(--bg-opacity));
 }
 
 .focus\:bg-gray-100:focus {
@@ -3541,6 +3613,21 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
+.from-flutter-blue {
+  --gradient-from-color: #2196F3;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+}
+
+.from-flutter-purple {
+  --gradient-from-color: #9C27B0;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+}
+
+.from-flutter-deepPurpleAccent {
+  --gradient-from-color: #7C4DFF;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+}
+
 .from-gray-100 {
   --gradient-from-color: #f7fafc;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -4011,6 +4098,21 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
+.via-flutter-blue {
+  --gradient-via-color: #2196F3;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+}
+
+.via-flutter-purple {
+  --gradient-via-color: #9C27B0;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+}
+
+.via-flutter-deepPurpleAccent {
+  --gradient-via-color: #7C4DFF;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+}
+
 .via-gray-100 {
   --gradient-via-color: #f7fafc;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -4477,6 +4579,18 @@ video {
   --gradient-to-color: #fff;
 }
 
+.to-flutter-blue {
+  --gradient-to-color: #2196F3;
+}
+
+.to-flutter-purple {
+  --gradient-to-color: #9C27B0;
+}
+
+.to-flutter-deepPurpleAccent {
+  --gradient-to-color: #7C4DFF;
+}
+
 .to-gray-100 {
   --gradient-to-color: #f7fafc;
 }
@@ -4855,6 +4969,21 @@ video {
 .hover\:from-white:hover {
   --gradient-from-color: #fff;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+}
+
+.hover\:from-flutter-blue:hover {
+  --gradient-from-color: #2196F3;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+}
+
+.hover\:from-flutter-purple:hover {
+  --gradient-from-color: #9C27B0;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+}
+
+.hover\:from-flutter-deepPurpleAccent:hover {
+  --gradient-from-color: #7C4DFF;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
 }
 
 .hover\:from-gray-100:hover {
@@ -5327,6 +5456,21 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
+.hover\:via-flutter-blue:hover {
+  --gradient-via-color: #2196F3;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+}
+
+.hover\:via-flutter-purple:hover {
+  --gradient-via-color: #9C27B0;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+}
+
+.hover\:via-flutter-deepPurpleAccent:hover {
+  --gradient-via-color: #7C4DFF;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+}
+
 .hover\:via-gray-100:hover {
   --gradient-via-color: #f7fafc;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -5793,6 +5937,18 @@ video {
   --gradient-to-color: #fff;
 }
 
+.hover\:to-flutter-blue:hover {
+  --gradient-to-color: #2196F3;
+}
+
+.hover\:to-flutter-purple:hover {
+  --gradient-to-color: #9C27B0;
+}
+
+.hover\:to-flutter-deepPurpleAccent:hover {
+  --gradient-to-color: #7C4DFF;
+}
+
 .hover\:to-gray-100:hover {
   --gradient-to-color: #f7fafc;
 }
@@ -6171,6 +6327,21 @@ video {
 .focus\:from-white:focus {
   --gradient-from-color: #fff;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+}
+
+.focus\:from-flutter-blue:focus {
+  --gradient-from-color: #2196F3;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+}
+
+.focus\:from-flutter-purple:focus {
+  --gradient-from-color: #9C27B0;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+}
+
+.focus\:from-flutter-deepPurpleAccent:focus {
+  --gradient-from-color: #7C4DFF;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
 }
 
 .focus\:from-gray-100:focus {
@@ -6643,6 +6814,21 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
 }
 
+.focus\:via-flutter-blue:focus {
+  --gradient-via-color: #2196F3;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+}
+
+.focus\:via-flutter-purple:focus {
+  --gradient-via-color: #9C27B0;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+}
+
+.focus\:via-flutter-deepPurpleAccent:focus {
+  --gradient-via-color: #7C4DFF;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+}
+
 .focus\:via-gray-100:focus {
   --gradient-via-color: #f7fafc;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -7107,6 +7293,18 @@ video {
 
 .focus\:to-white:focus {
   --gradient-to-color: #fff;
+}
+
+.focus\:to-flutter-blue:focus {
+  --gradient-to-color: #2196F3;
+}
+
+.focus\:to-flutter-purple:focus {
+  --gradient-to-color: #9C27B0;
+}
+
+.focus\:to-flutter-deepPurpleAccent:focus {
+  --gradient-to-color: #7C4DFF;
 }
 
 .focus\:to-gray-100:focus {
@@ -7627,6 +7825,24 @@ video {
   --border-opacity: 1;
   border-color: #fff;
   border-color: rgba(255, 255, 255, var(--border-opacity));
+}
+
+.border-flutter-blue {
+  --border-opacity: 1;
+  border-color: #2196F3;
+  border-color: rgba(33, 150, 243, var(--border-opacity));
+}
+
+.border-flutter-purple {
+  --border-opacity: 1;
+  border-color: #9C27B0;
+  border-color: rgba(156, 39, 176, var(--border-opacity));
+}
+
+.border-flutter-deepPurpleAccent {
+  --border-opacity: 1;
+  border-color: #7C4DFF;
+  border-color: rgba(124, 77, 255, var(--border-opacity));
 }
 
 .border-gray-100 {
@@ -8189,6 +8405,24 @@ video {
   border-color: rgba(255, 255, 255, var(--border-opacity));
 }
 
+.hover\:border-flutter-blue:hover {
+  --border-opacity: 1;
+  border-color: #2196F3;
+  border-color: rgba(33, 150, 243, var(--border-opacity));
+}
+
+.hover\:border-flutter-purple:hover {
+  --border-opacity: 1;
+  border-color: #9C27B0;
+  border-color: rgba(156, 39, 176, var(--border-opacity));
+}
+
+.hover\:border-flutter-deepPurpleAccent:hover {
+  --border-opacity: 1;
+  border-color: #7C4DFF;
+  border-color: rgba(124, 77, 255, var(--border-opacity));
+}
+
 .hover\:border-gray-100:hover {
   --border-opacity: 1;
   border-color: #f7fafc;
@@ -8747,6 +8981,24 @@ video {
   --border-opacity: 1;
   border-color: #fff;
   border-color: rgba(255, 255, 255, var(--border-opacity));
+}
+
+.focus\:border-flutter-blue:focus {
+  --border-opacity: 1;
+  border-color: #2196F3;
+  border-color: rgba(33, 150, 243, var(--border-opacity));
+}
+
+.focus\:border-flutter-purple:focus {
+  --border-opacity: 1;
+  border-color: #9C27B0;
+  border-color: rgba(156, 39, 176, var(--border-opacity));
+}
+
+.focus\:border-flutter-deepPurpleAccent:focus {
+  --border-opacity: 1;
+  border-color: #7C4DFF;
+  border-color: rgba(124, 77, 255, var(--border-opacity));
 }
 
 .focus\:border-gray-100:focus {
@@ -12533,6 +12785,24 @@ video {
   color: rgba(255, 255, 255, var(--placeholder-opacity));
 }
 
+.placeholder-flutter-blue::placeholder {
+  --placeholder-opacity: 1;
+  color: #2196F3;
+  color: rgba(33, 150, 243, var(--placeholder-opacity));
+}
+
+.placeholder-flutter-purple::placeholder {
+  --placeholder-opacity: 1;
+  color: #9C27B0;
+  color: rgba(156, 39, 176, var(--placeholder-opacity));
+}
+
+.placeholder-flutter-deepPurpleAccent::placeholder {
+  --placeholder-opacity: 1;
+  color: #7C4DFF;
+  color: rgba(124, 77, 255, var(--placeholder-opacity));
+}
+
 .placeholder-gray-100::placeholder {
   --placeholder-opacity: 1;
   color: #f7fafc;
@@ -13091,6 +13361,24 @@ video {
   --placeholder-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-flutter-blue:focus::placeholder {
+  --placeholder-opacity: 1;
+  color: #2196F3;
+  color: rgba(33, 150, 243, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-flutter-purple:focus::placeholder {
+  --placeholder-opacity: 1;
+  color: #9C27B0;
+  color: rgba(156, 39, 176, var(--placeholder-opacity));
+}
+
+.focus\:placeholder-flutter-deepPurpleAccent:focus::placeholder {
+  --placeholder-opacity: 1;
+  color: #7C4DFF;
+  color: rgba(124, 77, 255, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-gray-100:focus::placeholder {
@@ -13967,6 +14255,24 @@ video {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.text-flutter-blue {
+  --text-opacity: 1;
+  color: #2196F3;
+  color: rgba(33, 150, 243, var(--text-opacity));
+}
+
+.text-flutter-purple {
+  --text-opacity: 1;
+  color: #9C27B0;
+  color: rgba(156, 39, 176, var(--text-opacity));
+}
+
+.text-flutter-deepPurpleAccent {
+  --text-opacity: 1;
+  color: #7C4DFF;
+  color: rgba(124, 77, 255, var(--text-opacity));
+}
+
 .text-gray-100 {
   --text-opacity: 1;
   color: #f7fafc;
@@ -14527,6 +14833,24 @@ video {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.hover\:text-flutter-blue:hover {
+  --text-opacity: 1;
+  color: #2196F3;
+  color: rgba(33, 150, 243, var(--text-opacity));
+}
+
+.hover\:text-flutter-purple:hover {
+  --text-opacity: 1;
+  color: #9C27B0;
+  color: rgba(156, 39, 176, var(--text-opacity));
+}
+
+.hover\:text-flutter-deepPurpleAccent:hover {
+  --text-opacity: 1;
+  color: #7C4DFF;
+  color: rgba(124, 77, 255, var(--text-opacity));
+}
+
 .hover\:text-gray-100:hover {
   --text-opacity: 1;
   color: #f7fafc;
@@ -15085,6 +15409,24 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.focus\:text-flutter-blue:focus {
+  --text-opacity: 1;
+  color: #2196F3;
+  color: rgba(33, 150, 243, var(--text-opacity));
+}
+
+.focus\:text-flutter-purple:focus {
+  --text-opacity: 1;
+  color: #9C27B0;
+  color: rgba(156, 39, 176, var(--text-opacity));
+}
+
+.focus\:text-flutter-deepPurpleAccent:focus {
+  --text-opacity: 1;
+  color: #7C4DFF;
+  color: rgba(124, 77, 255, var(--text-opacity));
 }
 
 .focus\:text-gray-100:focus {
@@ -19369,6 +19711,24 @@ video {
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
+  .sm\:divide-flutter-blue > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--divide-opacity));
+  }
+
+  .sm\:divide-flutter-purple > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--divide-opacity));
+  }
+
+  .sm\:divide-flutter-deepPurpleAccent > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--divide-opacity));
+  }
+
   .sm\:divide-gray-100 > :not(template) ~ :not(template) {
     --divide-opacity: 1;
     border-color: #f7fafc;
@@ -20049,6 +20409,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .sm\:bg-flutter-blue {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .sm\:bg-flutter-purple {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .sm\:bg-flutter-deepPurpleAccent {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .sm\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -20609,6 +20987,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .sm\:hover\:bg-flutter-blue:hover {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-flutter-purple:hover {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-flutter-deepPurpleAccent:hover {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .sm\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -21167,6 +21563,24 @@ video {
     --bg-opacity: 1;
     background-color: #fff;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-flutter-blue:focus {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-flutter-purple:focus {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-flutter-deepPurpleAccent:focus {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-gray-100:focus {
@@ -21765,6 +22179,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .sm\:from-flutter-blue {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .sm\:from-flutter-purple {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .sm\:from-flutter-deepPurpleAccent {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .sm\:from-gray-100 {
     --gradient-from-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -22235,6 +22664,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .sm\:via-flutter-blue {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .sm\:via-flutter-purple {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .sm\:via-flutter-deepPurpleAccent {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .sm\:via-gray-100 {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -22701,6 +23145,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .sm\:to-flutter-blue {
+    --gradient-to-color: #2196F3;
+  }
+
+  .sm\:to-flutter-purple {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .sm\:to-flutter-deepPurpleAccent {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .sm\:to-gray-100 {
     --gradient-to-color: #f7fafc;
   }
@@ -23079,6 +23535,21 @@ video {
   .sm\:hover\:from-white:hover {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:hover\:from-flutter-blue:hover {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .sm\:hover\:from-flutter-purple:hover {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .sm\:hover\:from-flutter-deepPurpleAccent:hover {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .sm\:hover\:from-gray-100:hover {
@@ -23551,6 +24022,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .sm\:hover\:via-flutter-blue:hover {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .sm\:hover\:via-flutter-purple:hover {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .sm\:hover\:via-flutter-deepPurpleAccent:hover {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .sm\:hover\:via-gray-100:hover {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -24017,6 +24503,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .sm\:hover\:to-flutter-blue:hover {
+    --gradient-to-color: #2196F3;
+  }
+
+  .sm\:hover\:to-flutter-purple:hover {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .sm\:hover\:to-flutter-deepPurpleAccent:hover {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .sm\:hover\:to-gray-100:hover {
     --gradient-to-color: #f7fafc;
   }
@@ -24395,6 +24893,21 @@ video {
   .sm\:focus\:from-white:focus {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .sm\:focus\:from-flutter-blue:focus {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .sm\:focus\:from-flutter-purple:focus {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .sm\:focus\:from-flutter-deepPurpleAccent:focus {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .sm\:focus\:from-gray-100:focus {
@@ -24867,6 +25380,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .sm\:focus\:via-flutter-blue:focus {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .sm\:focus\:via-flutter-purple:focus {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .sm\:focus\:via-flutter-deepPurpleAccent:focus {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .sm\:focus\:via-gray-100:focus {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -25331,6 +25859,18 @@ video {
 
   .sm\:focus\:to-white:focus {
     --gradient-to-color: #fff;
+  }
+
+  .sm\:focus\:to-flutter-blue:focus {
+    --gradient-to-color: #2196F3;
+  }
+
+  .sm\:focus\:to-flutter-purple:focus {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .sm\:focus\:to-flutter-deepPurpleAccent:focus {
+    --gradient-to-color: #7C4DFF;
   }
 
   .sm\:focus\:to-gray-100:focus {
@@ -25851,6 +26391,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .sm\:border-flutter-blue {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .sm\:border-flutter-purple {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .sm\:border-flutter-deepPurpleAccent {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .sm\:border-gray-100 {
@@ -26413,6 +26971,24 @@ video {
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
+  .sm\:hover\:border-flutter-blue:hover {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .sm\:hover\:border-flutter-purple:hover {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .sm\:hover\:border-flutter-deepPurpleAccent:hover {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
+  }
+
   .sm\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -26971,6 +27547,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-flutter-blue:focus {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-flutter-purple:focus {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-flutter-deepPurpleAccent:focus {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .sm\:focus\:border-gray-100:focus {
@@ -30757,6 +31351,24 @@ video {
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
+  .sm\:placeholder-flutter-blue::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-flutter-purple::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .sm\:placeholder-flutter-deepPurpleAccent::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
+  }
+
   .sm\:placeholder-gray-100::placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -31315,6 +31927,24 @@ video {
     --placeholder-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-flutter-blue:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-flutter-purple:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-flutter-deepPurpleAccent:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-gray-100:focus::placeholder {
@@ -32191,6 +32821,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .sm\:text-flutter-blue {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .sm\:text-flutter-purple {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .sm\:text-flutter-deepPurpleAccent {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .sm\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -32751,6 +33399,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .sm\:hover\:text-flutter-blue:hover {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .sm\:hover\:text-flutter-purple:hover {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .sm\:hover\:text-flutter-deepPurpleAccent:hover {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .sm\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -33309,6 +33975,24 @@ video {
     --text-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
+  }
+
+  .sm\:focus\:text-flutter-blue:focus {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .sm\:focus\:text-flutter-purple:focus {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .sm\:focus\:text-flutter-deepPurpleAccent:focus {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
   }
 
   .sm\:focus\:text-gray-100:focus {
@@ -37563,6 +38247,24 @@ video {
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
+  .md\:divide-flutter-blue > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--divide-opacity));
+  }
+
+  .md\:divide-flutter-purple > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--divide-opacity));
+  }
+
+  .md\:divide-flutter-deepPurpleAccent > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--divide-opacity));
+  }
+
   .md\:divide-gray-100 > :not(template) ~ :not(template) {
     --divide-opacity: 1;
     border-color: #f7fafc;
@@ -38243,6 +38945,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .md\:bg-flutter-blue {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .md\:bg-flutter-purple {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .md\:bg-flutter-deepPurpleAccent {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .md\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -38803,6 +39523,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .md\:hover\:bg-flutter-blue:hover {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-flutter-purple:hover {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-flutter-deepPurpleAccent:hover {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .md\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -39361,6 +40099,24 @@ video {
     --bg-opacity: 1;
     background-color: #fff;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-flutter-blue:focus {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-flutter-purple:focus {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-flutter-deepPurpleAccent:focus {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
   }
 
   .md\:focus\:bg-gray-100:focus {
@@ -39959,6 +40715,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .md\:from-flutter-blue {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .md\:from-flutter-purple {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .md\:from-flutter-deepPurpleAccent {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .md\:from-gray-100 {
     --gradient-from-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -40429,6 +41200,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .md\:via-flutter-blue {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .md\:via-flutter-purple {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .md\:via-flutter-deepPurpleAccent {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .md\:via-gray-100 {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -40895,6 +41681,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .md\:to-flutter-blue {
+    --gradient-to-color: #2196F3;
+  }
+
+  .md\:to-flutter-purple {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .md\:to-flutter-deepPurpleAccent {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .md\:to-gray-100 {
     --gradient-to-color: #f7fafc;
   }
@@ -41273,6 +42071,21 @@ video {
   .md\:hover\:from-white:hover {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .md\:hover\:from-flutter-blue:hover {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .md\:hover\:from-flutter-purple:hover {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .md\:hover\:from-flutter-deepPurpleAccent:hover {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .md\:hover\:from-gray-100:hover {
@@ -41745,6 +42558,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .md\:hover\:via-flutter-blue:hover {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .md\:hover\:via-flutter-purple:hover {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .md\:hover\:via-flutter-deepPurpleAccent:hover {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .md\:hover\:via-gray-100:hover {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -42211,6 +43039,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .md\:hover\:to-flutter-blue:hover {
+    --gradient-to-color: #2196F3;
+  }
+
+  .md\:hover\:to-flutter-purple:hover {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .md\:hover\:to-flutter-deepPurpleAccent:hover {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .md\:hover\:to-gray-100:hover {
     --gradient-to-color: #f7fafc;
   }
@@ -42589,6 +43429,21 @@ video {
   .md\:focus\:from-white:focus {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .md\:focus\:from-flutter-blue:focus {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .md\:focus\:from-flutter-purple:focus {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .md\:focus\:from-flutter-deepPurpleAccent:focus {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .md\:focus\:from-gray-100:focus {
@@ -43061,6 +43916,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .md\:focus\:via-flutter-blue:focus {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .md\:focus\:via-flutter-purple:focus {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .md\:focus\:via-flutter-deepPurpleAccent:focus {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .md\:focus\:via-gray-100:focus {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -43525,6 +44395,18 @@ video {
 
   .md\:focus\:to-white:focus {
     --gradient-to-color: #fff;
+  }
+
+  .md\:focus\:to-flutter-blue:focus {
+    --gradient-to-color: #2196F3;
+  }
+
+  .md\:focus\:to-flutter-purple:focus {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .md\:focus\:to-flutter-deepPurpleAccent:focus {
+    --gradient-to-color: #7C4DFF;
   }
 
   .md\:focus\:to-gray-100:focus {
@@ -44045,6 +44927,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .md\:border-flutter-blue {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .md\:border-flutter-purple {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .md\:border-flutter-deepPurpleAccent {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .md\:border-gray-100 {
@@ -44607,6 +45507,24 @@ video {
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
+  .md\:hover\:border-flutter-blue:hover {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .md\:hover\:border-flutter-purple:hover {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .md\:hover\:border-flutter-deepPurpleAccent:hover {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
+  }
+
   .md\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -45165,6 +46083,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .md\:focus\:border-flutter-blue:focus {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .md\:focus\:border-flutter-purple:focus {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .md\:focus\:border-flutter-deepPurpleAccent:focus {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .md\:focus\:border-gray-100:focus {
@@ -48951,6 +49887,24 @@ video {
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
+  .md\:placeholder-flutter-blue::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-flutter-purple::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .md\:placeholder-flutter-deepPurpleAccent::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
+  }
+
   .md\:placeholder-gray-100::placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -49509,6 +50463,24 @@ video {
     --placeholder-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-flutter-blue:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-flutter-purple:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-flutter-deepPurpleAccent:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-gray-100:focus::placeholder {
@@ -50385,6 +51357,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .md\:text-flutter-blue {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .md\:text-flutter-purple {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .md\:text-flutter-deepPurpleAccent {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .md\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -50945,6 +51935,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .md\:hover\:text-flutter-blue:hover {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .md\:hover\:text-flutter-purple:hover {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .md\:hover\:text-flutter-deepPurpleAccent:hover {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .md\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -51503,6 +52511,24 @@ video {
     --text-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
+  }
+
+  .md\:focus\:text-flutter-blue:focus {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .md\:focus\:text-flutter-purple:focus {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .md\:focus\:text-flutter-deepPurpleAccent:focus {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
   }
 
   .md\:focus\:text-gray-100:focus {
@@ -55757,6 +56783,24 @@ video {
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
+  .lg\:divide-flutter-blue > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--divide-opacity));
+  }
+
+  .lg\:divide-flutter-purple > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--divide-opacity));
+  }
+
+  .lg\:divide-flutter-deepPurpleAccent > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--divide-opacity));
+  }
+
   .lg\:divide-gray-100 > :not(template) ~ :not(template) {
     --divide-opacity: 1;
     border-color: #f7fafc;
@@ -56437,6 +57481,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .lg\:bg-flutter-blue {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .lg\:bg-flutter-purple {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .lg\:bg-flutter-deepPurpleAccent {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .lg\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -56997,6 +58059,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .lg\:hover\:bg-flutter-blue:hover {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-flutter-purple:hover {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-flutter-deepPurpleAccent:hover {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .lg\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -57555,6 +58635,24 @@ video {
     --bg-opacity: 1;
     background-color: #fff;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-flutter-blue:focus {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-flutter-purple:focus {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-flutter-deepPurpleAccent:focus {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-gray-100:focus {
@@ -58153,6 +59251,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .lg\:from-flutter-blue {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .lg\:from-flutter-purple {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .lg\:from-flutter-deepPurpleAccent {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .lg\:from-gray-100 {
     --gradient-from-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -58623,6 +59736,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .lg\:via-flutter-blue {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .lg\:via-flutter-purple {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .lg\:via-flutter-deepPurpleAccent {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .lg\:via-gray-100 {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -59089,6 +60217,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .lg\:to-flutter-blue {
+    --gradient-to-color: #2196F3;
+  }
+
+  .lg\:to-flutter-purple {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .lg\:to-flutter-deepPurpleAccent {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .lg\:to-gray-100 {
     --gradient-to-color: #f7fafc;
   }
@@ -59467,6 +60607,21 @@ video {
   .lg\:hover\:from-white:hover {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:hover\:from-flutter-blue:hover {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .lg\:hover\:from-flutter-purple:hover {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .lg\:hover\:from-flutter-deepPurpleAccent:hover {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .lg\:hover\:from-gray-100:hover {
@@ -59939,6 +61094,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .lg\:hover\:via-flutter-blue:hover {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .lg\:hover\:via-flutter-purple:hover {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .lg\:hover\:via-flutter-deepPurpleAccent:hover {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .lg\:hover\:via-gray-100:hover {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -60405,6 +61575,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .lg\:hover\:to-flutter-blue:hover {
+    --gradient-to-color: #2196F3;
+  }
+
+  .lg\:hover\:to-flutter-purple:hover {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .lg\:hover\:to-flutter-deepPurpleAccent:hover {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .lg\:hover\:to-gray-100:hover {
     --gradient-to-color: #f7fafc;
   }
@@ -60783,6 +61965,21 @@ video {
   .lg\:focus\:from-white:focus {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .lg\:focus\:from-flutter-blue:focus {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .lg\:focus\:from-flutter-purple:focus {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .lg\:focus\:from-flutter-deepPurpleAccent:focus {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .lg\:focus\:from-gray-100:focus {
@@ -61255,6 +62452,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .lg\:focus\:via-flutter-blue:focus {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .lg\:focus\:via-flutter-purple:focus {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .lg\:focus\:via-flutter-deepPurpleAccent:focus {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .lg\:focus\:via-gray-100:focus {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -61719,6 +62931,18 @@ video {
 
   .lg\:focus\:to-white:focus {
     --gradient-to-color: #fff;
+  }
+
+  .lg\:focus\:to-flutter-blue:focus {
+    --gradient-to-color: #2196F3;
+  }
+
+  .lg\:focus\:to-flutter-purple:focus {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .lg\:focus\:to-flutter-deepPurpleAccent:focus {
+    --gradient-to-color: #7C4DFF;
   }
 
   .lg\:focus\:to-gray-100:focus {
@@ -62239,6 +63463,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .lg\:border-flutter-blue {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .lg\:border-flutter-purple {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .lg\:border-flutter-deepPurpleAccent {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .lg\:border-gray-100 {
@@ -62801,6 +64043,24 @@ video {
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
+  .lg\:hover\:border-flutter-blue:hover {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .lg\:hover\:border-flutter-purple:hover {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .lg\:hover\:border-flutter-deepPurpleAccent:hover {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
+  }
+
   .lg\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -63359,6 +64619,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-flutter-blue:focus {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-flutter-purple:focus {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-flutter-deepPurpleAccent:focus {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .lg\:focus\:border-gray-100:focus {
@@ -67145,6 +68423,24 @@ video {
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
+  .lg\:placeholder-flutter-blue::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-flutter-purple::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .lg\:placeholder-flutter-deepPurpleAccent::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
+  }
+
   .lg\:placeholder-gray-100::placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -67703,6 +68999,24 @@ video {
     --placeholder-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-flutter-blue:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-flutter-purple:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-flutter-deepPurpleAccent:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-gray-100:focus::placeholder {
@@ -68579,6 +69893,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .lg\:text-flutter-blue {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .lg\:text-flutter-purple {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .lg\:text-flutter-deepPurpleAccent {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .lg\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -69139,6 +70471,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .lg\:hover\:text-flutter-blue:hover {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .lg\:hover\:text-flutter-purple:hover {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .lg\:hover\:text-flutter-deepPurpleAccent:hover {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .lg\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -69697,6 +71047,24 @@ video {
     --text-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
+  }
+
+  .lg\:focus\:text-flutter-blue:focus {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .lg\:focus\:text-flutter-purple:focus {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .lg\:focus\:text-flutter-deepPurpleAccent:focus {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
   }
 
   .lg\:focus\:text-gray-100:focus {
@@ -73951,6 +75319,24 @@ video {
     border-color: rgba(255, 255, 255, var(--divide-opacity));
   }
 
+  .xl\:divide-flutter-blue > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--divide-opacity));
+  }
+
+  .xl\:divide-flutter-purple > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--divide-opacity));
+  }
+
+  .xl\:divide-flutter-deepPurpleAccent > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--divide-opacity));
+  }
+
   .xl\:divide-gray-100 > :not(template) ~ :not(template) {
     --divide-opacity: 1;
     border-color: #f7fafc;
@@ -74631,6 +76017,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .xl\:bg-flutter-blue {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .xl\:bg-flutter-purple {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .xl\:bg-flutter-deepPurpleAccent {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .xl\:bg-gray-100 {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -75191,6 +76595,24 @@ video {
     background-color: rgba(255, 255, 255, var(--bg-opacity));
   }
 
+  .xl\:hover\:bg-flutter-blue:hover {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-flutter-purple:hover {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-flutter-deepPurpleAccent:hover {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
+  }
+
   .xl\:hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f7fafc;
@@ -75749,6 +77171,24 @@ video {
     --bg-opacity: 1;
     background-color: #fff;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-flutter-blue:focus {
+    --bg-opacity: 1;
+    background-color: #2196F3;
+    background-color: rgba(33, 150, 243, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-flutter-purple:focus {
+    --bg-opacity: 1;
+    background-color: #9C27B0;
+    background-color: rgba(156, 39, 176, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-flutter-deepPurpleAccent:focus {
+    --bg-opacity: 1;
+    background-color: #7C4DFF;
+    background-color: rgba(124, 77, 255, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-gray-100:focus {
@@ -76347,6 +77787,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .xl\:from-flutter-blue {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .xl\:from-flutter-purple {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .xl\:from-flutter-deepPurpleAccent {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .xl\:from-gray-100 {
     --gradient-from-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -76817,6 +78272,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .xl\:via-flutter-blue {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .xl\:via-flutter-purple {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .xl\:via-flutter-deepPurpleAccent {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .xl\:via-gray-100 {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -77283,6 +78753,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .xl\:to-flutter-blue {
+    --gradient-to-color: #2196F3;
+  }
+
+  .xl\:to-flutter-purple {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .xl\:to-flutter-deepPurpleAccent {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .xl\:to-gray-100 {
     --gradient-to-color: #f7fafc;
   }
@@ -77661,6 +79143,21 @@ video {
   .xl\:hover\:from-white:hover {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:hover\:from-flutter-blue:hover {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .xl\:hover\:from-flutter-purple:hover {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .xl\:hover\:from-flutter-deepPurpleAccent:hover {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .xl\:hover\:from-gray-100:hover {
@@ -78133,6 +79630,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .xl\:hover\:via-flutter-blue:hover {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .xl\:hover\:via-flutter-purple:hover {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .xl\:hover\:via-flutter-deepPurpleAccent:hover {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .xl\:hover\:via-gray-100:hover {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -78599,6 +80111,18 @@ video {
     --gradient-to-color: #fff;
   }
 
+  .xl\:hover\:to-flutter-blue:hover {
+    --gradient-to-color: #2196F3;
+  }
+
+  .xl\:hover\:to-flutter-purple:hover {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .xl\:hover\:to-flutter-deepPurpleAccent:hover {
+    --gradient-to-color: #7C4DFF;
+  }
+
   .xl\:hover\:to-gray-100:hover {
     --gradient-to-color: #f7fafc;
   }
@@ -78977,6 +80501,21 @@ video {
   .xl\:focus\:from-white:focus {
     --gradient-from-color: #fff;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
+  }
+
+  .xl\:focus\:from-flutter-blue:focus {
+    --gradient-from-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .xl\:focus\:from-flutter-purple:focus {
+    --gradient-from-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .xl\:focus\:from-flutter-deepPurpleAccent:focus {
+    --gradient-from-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
   }
 
   .xl\:focus\:from-gray-100:focus {
@@ -79449,6 +80988,21 @@ video {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0));
   }
 
+  .xl\:focus\:via-flutter-blue:focus {
+    --gradient-via-color: #2196F3;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(33, 150, 243, 0));
+  }
+
+  .xl\:focus\:via-flutter-purple:focus {
+    --gradient-via-color: #9C27B0;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(156, 39, 176, 0));
+  }
+
+  .xl\:focus\:via-flutter-deepPurpleAccent:focus {
+    --gradient-via-color: #7C4DFF;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(124, 77, 255, 0));
+  }
+
   .xl\:focus\:via-gray-100:focus {
     --gradient-via-color: #f7fafc;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(247, 250, 252, 0));
@@ -79913,6 +81467,18 @@ video {
 
   .xl\:focus\:to-white:focus {
     --gradient-to-color: #fff;
+  }
+
+  .xl\:focus\:to-flutter-blue:focus {
+    --gradient-to-color: #2196F3;
+  }
+
+  .xl\:focus\:to-flutter-purple:focus {
+    --gradient-to-color: #9C27B0;
+  }
+
+  .xl\:focus\:to-flutter-deepPurpleAccent:focus {
+    --gradient-to-color: #7C4DFF;
   }
 
   .xl\:focus\:to-gray-100:focus {
@@ -80433,6 +81999,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .xl\:border-flutter-blue {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .xl\:border-flutter-purple {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .xl\:border-flutter-deepPurpleAccent {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .xl\:border-gray-100 {
@@ -80995,6 +82579,24 @@ video {
     border-color: rgba(255, 255, 255, var(--border-opacity));
   }
 
+  .xl\:hover\:border-flutter-blue:hover {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .xl\:hover\:border-flutter-purple:hover {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .xl\:hover\:border-flutter-deepPurpleAccent:hover {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
+  }
+
   .xl\:hover\:border-gray-100:hover {
     --border-opacity: 1;
     border-color: #f7fafc;
@@ -81553,6 +83155,24 @@ video {
     --border-opacity: 1;
     border-color: #fff;
     border-color: rgba(255, 255, 255, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-flutter-blue:focus {
+    --border-opacity: 1;
+    border-color: #2196F3;
+    border-color: rgba(33, 150, 243, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-flutter-purple:focus {
+    --border-opacity: 1;
+    border-color: #9C27B0;
+    border-color: rgba(156, 39, 176, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-flutter-deepPurpleAccent:focus {
+    --border-opacity: 1;
+    border-color: #7C4DFF;
+    border-color: rgba(124, 77, 255, var(--border-opacity));
   }
 
   .xl\:focus\:border-gray-100:focus {
@@ -85339,6 +86959,24 @@ video {
     color: rgba(255, 255, 255, var(--placeholder-opacity));
   }
 
+  .xl\:placeholder-flutter-blue::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-flutter-purple::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .xl\:placeholder-flutter-deepPurpleAccent::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
+  }
+
   .xl\:placeholder-gray-100::placeholder {
     --placeholder-opacity: 1;
     color: #f7fafc;
@@ -85897,6 +87535,24 @@ video {
     --placeholder-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-flutter-blue:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-flutter-purple:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-flutter-deepPurpleAccent:focus::placeholder {
+    --placeholder-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-gray-100:focus::placeholder {
@@ -86773,6 +88429,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .xl\:text-flutter-blue {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .xl\:text-flutter-purple {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .xl\:text-flutter-deepPurpleAccent {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .xl\:text-gray-100 {
     --text-opacity: 1;
     color: #f7fafc;
@@ -87333,6 +89007,24 @@ video {
     color: rgba(255, 255, 255, var(--text-opacity));
   }
 
+  .xl\:hover\:text-flutter-blue:hover {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .xl\:hover\:text-flutter-purple:hover {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .xl\:hover\:text-flutter-deepPurpleAccent:hover {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
+  }
+
   .xl\:hover\:text-gray-100:hover {
     --text-opacity: 1;
     color: #f7fafc;
@@ -87891,6 +89583,24 @@ video {
     --text-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
+  }
+
+  .xl\:focus\:text-flutter-blue:focus {
+    --text-opacity: 1;
+    color: #2196F3;
+    color: rgba(33, 150, 243, var(--text-opacity));
+  }
+
+  .xl\:focus\:text-flutter-purple:focus {
+    --text-opacity: 1;
+    color: #9C27B0;
+    color: rgba(156, 39, 176, var(--text-opacity));
+  }
+
+  .xl\:focus\:text-flutter-deepPurpleAccent:focus {
+    --text-opacity: 1;
+    color: #7C4DFF;
+    color: rgba(124, 77, 255, var(--text-opacity));
   }
 
   .xl\:focus\:text-gray-100:focus {
