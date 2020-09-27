@@ -44,6 +44,6 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^9.8.6"
   }
 }
