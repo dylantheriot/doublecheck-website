@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/images/logo_white1.png';
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <header className="text-gray-700 body-font bg-flutter-purple">
       <div className="flex flex-wrap flex-col px-16 py-4 md:flex-row items-center justify-between">
@@ -11,7 +11,7 @@ export default function Navbar() {
         </div>
         </a>
         <div className="text-white font-bold text-2xl">
-          Session: 123567
+          Session: {props.sessionID}
         </div>
       </div>
     </header>

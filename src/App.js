@@ -3,7 +3,6 @@ import CreateSessionPage from './components/create_session_page/CreateSessionPag
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import DashboardPage from './components/dashboard_page/DashboardPage';
 
-
 function App() {
   return (
     <Router>
